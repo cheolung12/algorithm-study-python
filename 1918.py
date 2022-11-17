@@ -25,5 +25,4 @@ for i in data:
      
 while(stack):
     result += stack.pop()
-
 print(result)
