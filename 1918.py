@@ -22,12 +22,8 @@ for i in data:
             while(stack and stack[-1] != '('):
                 result += stack.pop()
             stack.append(i)
-print(stack)       
+     
 while(stack):
     result += stack.pop()
 
 print(result)
-    
-        
-            
-
