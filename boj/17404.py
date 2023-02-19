@@ -10,7 +10,7 @@ for i in range(3):
         dp[j][0] = rgbd[j][0] + min(dp[j-1][1], dp[j-1][2])
         dp[j][1] = rgbd[j][1] + min(dp[j-1][0], dp[j-1][2])
         dp[j][2] = rgbd[j][2] + min(dp[j-1][0], dp[j-1][1])
-    for k in range(3):
+    for k in range(3):  # 첫번째 집과 N번째 집이 다른 경우만 골라내기
         if i != k:
             ans = min(ans, dp[-1][k])
 
